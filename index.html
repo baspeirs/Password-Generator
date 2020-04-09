@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div class ="row">
+            <div class="col-lg-12"><h1>Password Generator</h1></div>
+        </div>
+    </header>
+<!-- section class = container for the bulk of the application -->
+    <section class="container">
+        <div calss="settings">
+            <!-- create class for the length requirement of the passoword // minimum = 8 // maximum = 20 // setting initian value (value = "") to 10  -->
+            <div class="pWordLength">
+                <label><p>Password Length</p></label>
+                <input type="number" id="charRange" min="8" max="20" value="10" />
+            </div>
+<!-- create individual classes for each requirement function and use check boxes to select which value you want requred -->
+            <!-- starting off with the lowercase letter requirement -->
+            <div class="lowerCase">
+                <label><p>Include lowercase letters</p></label>
+                <!-- useing an input type of checkbox to create a checkbox on the right hand side -->
+                <!-- Setting this one to automatically checked since it is likely that user would want lowercase values -->
+                <input type="checkbox" id="lowerSelect" checked/>
+            </div>
+
+            <!-- begin uppercase requirement selection -->
+            <div class="upperCase">
+                <label><p>Include uppercase letters</p></label>
+                <!-- useing an input type of checkbox to create a checkbox on the right hand side -->
+                <input type="checkbox" id="upperSelect" />
+            </div>
+
+            <!-- begin number requirement selection -->
+            <div class="number">
+                <label><p>Include numbers</p></label>
+                <!-- useing an input type of checkbox to create a checkbox on the right hand side -->
+                <input type="checkbox" id="numberSelect" />
+            </div>
+
+            <!-- begin special character requirement selection -->
+            <div class="specialCharacter">
+                <label><p>Include special characters</p></label>
+                <!-- useing an input type of checkbox to create a checkbox on the right hand side -->
+                <input type="checkbox" id="specialSelect" />
+            </div>
+
+            <!-- lets create a button to click for generating the password -->
+            <div class="button">
+                <button class="btn btn-large" id="generate"><h3>Generate Password!</h3></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section for the result -->
+    <section class="container">
+        <div class="resultContainer">
+            <textarea id="result" placeholder="Your Password"></textarea>
+        </div>
+    </section>
+
+<!-- id = charRange
+id = lowerSelect
+id = upperSelect
+id = numberSelect
+id = specialSelect
+id = generate
+id = result -->
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
