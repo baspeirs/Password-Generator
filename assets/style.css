@@ -1,0 +1,58 @@
+body {
+    padding: 2%;
+    background-color: aquamarine;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin-bottom: 10px;
+    background-color:white;
+    margin: auto;
+    padding: 2%;
+}
+
+#result {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+.myButton {
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: aquamarine;
+    width: 400px;
+    border-radius: 36px;
+}
+.settings {
+    width: 400px;
+    margin: auto;
+}
+label {
+    text-align: left;
+}
+[type="checkbox"], [type="number"]{
+    float: right;
+}
+
