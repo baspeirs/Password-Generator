@@ -49,6 +49,7 @@ function randomSpecial() {
 }
 // create variable of empty string
 var password = " "
+
 // passGenerate = html id generate (buttong) and will call function on click
 passGenerate.addEventListener('click', function() {
     // first we have to make sure the variable "password" is reset every click
